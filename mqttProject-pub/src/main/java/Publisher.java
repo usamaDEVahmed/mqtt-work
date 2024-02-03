@@ -15,7 +15,7 @@ public class Publisher
 			MqttConnectOptions options = new MqttConnectOptions();
 			client.connect(options);
 
-			MqttMessage message = new MqttMessage("Sehar".getBytes());
+			MqttMessage message = new MqttMessage("MESSAGE123".getBytes());
 			message.setQos(QOS);
 			client.publish(topic, message);
 
